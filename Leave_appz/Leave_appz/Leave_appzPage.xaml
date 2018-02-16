@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Leave_appz" x:Class="Leave_appz.Leave_appzPage">
+    <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:Leave_appz" 
+    x:Class="Leave_appz.Leave_appzPage">
     <RelativeLayout>
+            
             <Image x:Name="backgroundImage" Aspect="AspectFill"
                         RelativeLayout.WidthConstraint=
                         "{ConstraintExpression Type=RelativeToParent,
@@ -62,7 +66,7 @@
                                                ElementName=backgroundImage,
                                                Factor=1}" />
 
-               <Entry Keyboard="Email" Placeholder="Username" TextColor="White" FontSize="23" PlaceholderColor="#BFffffff" Margin="15" HorizontalTextAlignment="Start" BackgroundColor="Transparent"
+               <local:CustomEntry Keyboard="Email" Placeholder="Username" TextColor="White" FontSize="23" PlaceholderColor="#BFffffff" Margin="15" HorizontalTextAlignment="Start" BackgroundColor="Transparent"
                        RelativeLayout.YConstraint=
                        "{ConstraintExpression Type=RelativeToView,
                                                 Property=Y,
@@ -79,7 +83,7 @@
 
 
 
-                <Entry IsPassword="true" Placeholder="Password"  PlaceholderColor="#BFffffff" Margin="15" TextColor="White" FontSize="23" HorizontalTextAlignment="Start" BackgroundColor="Transparent"
+                <local:CustomEntry IsPassword="true" Placeholder="Password"  PlaceholderColor="#BFffffff" Margin="15" TextColor="White" FontSize="23" HorizontalTextAlignment="Start" BackgroundColor="Transparent"
                       RelativeLayout.YConstraint=
                       "{ConstraintExpression Type=RelativeToView,
                                               Property=Y,
