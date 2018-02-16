@@ -98,7 +98,7 @@
 
 
 
-               <Button Text="Sign In"  FontSize="25" BackgroundColor="#BFffffff" BorderRadius="25" Margin="15" TextColor="#fc3b00" HeightRequest="50" 
+               <local:CustomButton Text="Sign In"  FontSize="22" BackgroundColor="#BFffffff" BorderRadius="25" Margin="15" TextColor="#fc3b00" HeightRequest="50" 
                     RelativeLayout.YConstraint=
                     "{ConstraintExpression Type=RelativeToParent,
                                             Property=Height,
