@@ -8,7 +8,7 @@ namespace Leave_appz
         {
             InitializeComponent();
 
-            MainPage = new Leave_appzPage();
+            MainPage = new LeaveInfo();
         }
 
         protected override void OnStart()

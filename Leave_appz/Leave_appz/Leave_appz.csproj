@@ -32,6 +32,18 @@
     <EmbeddedResource Include="Leave_appzPage.xaml" />
     <EmbeddedResource Include="Assets\background.png" />
     <EmbeddedResource Include="Assets\whitelogoss.png" />
+    <EmbeddedResource Include="About.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeaveInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -43,6 +55,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CustomEntry.cs" />
     <Compile Include="CustomButton.cs" />
+    <Compile Include="About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help.xaml.cs">
+      <DependentUpon>Help.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveInfo.xaml.cs">
+      <DependentUpon>LeaveInfo.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

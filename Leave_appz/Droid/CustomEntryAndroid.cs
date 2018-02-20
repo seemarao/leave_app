@@ -14,6 +14,7 @@ namespace Leave_appz.Droid
 {
     public class CustomEntryAndroid : EntryRenderer
     {
+        
         protected override void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.Entry> e)
         {
             base.OnElementChanged(e);
