@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Leave_appz.sickLeaveRequestPage" 
+    xmlns:local="clr-namespace:Leave_appz">
+
+<RelativeLayout>
+            
+            <Image x:Name="backgroundImage" Aspect="AspectFill"
+                        RelativeLayout.WidthConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Width,
+                                               Factor=1}"
+
+                       RelativeLayout.HeightConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Height,
+                                               Factor=1}" />
+
+
+
+             <Label Text="Sick Leave" FontAttributes="Bold" FontSize="25" Margin="15" TextColor="White" HorizontalTextAlignment="Start"
+                     RelativeLayout.YConstraint=
+                     "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Y,
+                                               Factor=1,
+                    
+                                               Constant=100}"
+                     RelativeLayout.WidthConstraint=
+                    "{ConstraintExpression Type=RelativeToParent,
+                                              Property=Width,
+                                              Factor=1}" />
+
+        <BoxView HeightRequest="1.5" BackgroundColor="White" Margin="15"
+                 RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                                Property=Y,
+                                                Factor=1,
+                                                ElementName=backgroundImage,
+                                                Constant=140}"
+
+
+                      RelativeLayout.WidthConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                               Property=Width,
+                                               ElementName=backgroundImage,
+                                               Factor=1}"/>
+
+
+        <Editor Margin="15" BackgroundColor="Transparent" HeightRequest="120" WidthRequest="350" TextColor="White" 
+          Keyboard="Default" Text="djkfhf"
+            RelativeLayout.YConstraint=
+            "{ConstraintExpression Type=RelativeToView,
+                                                Property=Y,
+                                                Factor=1,
+                                                ElementName=backgroundImage,
+                                                Constant=170}"
+
+
+                      RelativeLayout.WidthConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                               Property=Width,
+                                               ElementNam}"/>
+
+         <BoxView HeightRequest="1.5" BackgroundColor="White" Margin="15" 
+                 RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                                Property=Y,
+                                                Factor=1,
+                                                ElementName=backgroundImage,
+                                                Constant=320}"
+
+            RelativeLayout.WidthConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                               Property=Width,
+                                               ElementName=backgroundImage,
+                                               Factor=1}"/>
+
+        
+
+       </RelativeLayout>
+    
+</ContentPage>

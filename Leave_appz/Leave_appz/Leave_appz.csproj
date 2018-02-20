@@ -44,6 +44,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="sickLeaveRequestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -63,6 +67,9 @@
     </Compile>
     <Compile Include="LeaveInfo.xaml.cs">
       <DependentUpon>LeaveInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sickLeaveRequestPage.xaml.cs">
+      <DependentUpon>sickLeaveRequestPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
