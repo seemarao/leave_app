@@ -53,7 +53,7 @@
                                               Factor=1}" />
 
 
-               <Label Text="Some words about the app to fill the space jkhfd jgbfbg dhgjsl dshgjs sdkhgfsdl sdhkgids skdhgidsk dfbdsj dsjhfsd yufy"  FontSize="20" Margin="15,0,15,0" TextColor="#CCffffff" HorizontalTextAlignment="Center"
+               <Label Text="Some words about the app to fill the space jkhfd jgbfbg dhgjsl dshgjs sdkhgfsdl sdhkgids skdhgidsk dfbdsj dsjhfsd yufy"  FontSize="20" Margin="15,0,15,0" TextColor="#ffffffff" HorizontalTextAlignment="Center"
                      RelativeLayout.YConstraint=
                      "{ConstraintExpression Type=RelativeToView,
                                                Property=Y,
@@ -66,7 +66,7 @@
                                                ElementName=backgroundImage,
                                                Factor=1}" />
 
-               <local:CustomEntry Keyboard="Email" Placeholder="Username" TextColor="White" FontSize="23" PlaceholderColor="#BFffffff" Margin="15" HorizontalTextAlignment="Start" BackgroundColor="Transparent"
+               <local:CustomEntry Keyboard="Email" Placeholder="Username" TextColor="White" FontSize="23" PlaceholderColor="#ffffffff" Margin="15" HorizontalTextAlignment="Start" BackgroundColor="Transparent"
                        RelativeLayout.YConstraint=
                        "{ConstraintExpression Type=RelativeToView,
                                                 Property=Y,
@@ -83,7 +83,25 @@
 
 
 
-                <local:CustomEntry IsPassword="true" Placeholder="Password"  PlaceholderColor="#BFffffff" Margin="15" TextColor="White" FontSize="23" HorizontalTextAlignment="Start" BackgroundColor="Transparent"
+
+             <BoxView HeightRequest="1.5" BackgroundColor="White" Margin="15"
+                 RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                                Property=Y,
+                                                Factor=1,
+                                                ElementName=backgroundImage,
+                                                Constant=390}"
+
+
+                       RelativeLayout.WidthConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                               Property=Width,
+                                               ElementName=backgroundImage,
+                                               Factor=1}"/>
+
+
+        
+                <local:CustomEntry IsPassword="true" Placeholder="Password"  PlaceholderColor="#ffffffff" Margin="15" TextColor="White" FontSize="23" HorizontalTextAlignment="Start" BackgroundColor="Transparent"
                       RelativeLayout.YConstraint=
                       "{ConstraintExpression Type=RelativeToView,
                                               Property=Y,
@@ -97,8 +115,24 @@
                                               Factor=1}" />
 
 
+               
+                <BoxView HeightRequest="1.5" BackgroundColor="White" Margin="15"
+                 RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                                Property=Y,
+                                                Factor=1,
+                                                ElementName=backgroundImage,
+                                                Constant=450}"
 
-               <local:CustomButton Text="Sign In"  FontSize="22" BackgroundColor="#BFffffff" BorderRadius="25" Margin="15" TextColor="#fc3b00" HeightRequest="50" 
+
+                       RelativeLayout.WidthConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                               Property=Width,
+                                               ElementName=backgroundImage,
+                                               Factor=1}"/>
+        
+
+               <local:CustomButton Text="Sign In"  FontSize="22" BackgroundColor="#ffffffff" BorderRadius="25" Margin="15" TextColor="#fc3b00" HeightRequest="50" 
                     RelativeLayout.YConstraint=
                     "{ConstraintExpression Type=RelativeToParent,
                                             Property=Height,
