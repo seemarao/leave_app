@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Leave_appz.HomePage">
+<ContentPage.Content>
+    <ScrollView>
+
+    <RelativeLayout>
+            
+            <Image x:Name="backgroundImage" Aspect="AspectFill"
+                        RelativeLayout.WidthConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Width,
+                                               Factor=1}"
+
+                       RelativeLayout.HeightConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Height,
+                                               Factor=1}" />
+
+          <Image x:Name="sideMenu" Aspect="AspectFill" WidthRequest="30" HeightRequest="30"
+                        
+                        RelativeLayout.XConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                               Property = X, 
+                                               Constant = 10}"
+
+                        RelativeLayout.YConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                               Property = Y, 
+                                               Constant = 10}" />
+
+           <Label x:Name="userID" TextColor="#FFFFFF" Text="User ID" FontAttributes="Bold" FontSize="26"  
+                        RelativeLayout.XConstraint=
+                        "{ConstraintExpression Type=RelativeToParent, 
+                                                Property=X, 
+                                                Factor=0, 
+                                                Constant=10}"
+                    
+                        RelativeLayout.YConstraint=
+                        "{ConstraintExpression Type=RelativeToParent, 
+                                                Property=Y, 
+                                                Factor=0, 
+                                                Constant=40}" 
+                    
+                        RelativeLayout.WidthConstraint=
+                        "{ConstraintExpression Type=RelativeToParent, 
+                                                Property=Width, 
+                                                Factor=1}" />
+
+           <Label x:Name="userName" TextColor="#FFFFFF" Text="User Name" FontAttributes="Bold" FontSize="26"  
+                        RelativeLayout.XConstraint=
+                        "{ConstraintExpression Type=RelativeToParent, 
+                                                Property=X, 
+                                                Factor=0, 
+                                                Constant=10}"
+                    
+                        RelativeLayout.YConstraint=
+                        "{ConstraintExpression Type=RelativeToParent, 
+                                                Property=Y, 
+                                                Factor=0, 
+                                                Constant=80}" 
+                    
+                        RelativeLayout.WidthConstraint=
+                        "{ConstraintExpression Type=RelativeToParent, 
+                                                Property=Width, 
+                                                Factor=1}" />
+
+
+                <WebView x:Name="leaveDetailsWV"  Margin="0, 0, 10, 130"
+
+                   RelativeLayout.XConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,
+                                               Property=X,
+                                               Factor=1,
+                                               Constant=10}"
+                   
+                       RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Y,
+                                               Factor=1,
+                                               Constant=130}"
+                   
+                       RelativeLayout.WidthConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Width,
+                                               Factor=1,
+                                               Constant=-10}"
+
+                       RelativeLayout.HeightConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Height,
+                                               Factor=1,
+                                               Constant=-130}" />
+                
+                
+
+         <Button x:Name="sickButton" Text="+3" WidthRequest="70" HeightRequest="70"
+                        RelativeLayout.XConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                                Property=X, 
+                                                Constant=20}"
+
+                        RelativeLayout.YConstraint=
+                        "{ConstraintExpression Type=RelativeToView, 
+                                                ElementName=backgroundImage,
+                                                Property=Height, 
+                                                Constant=-130}" />
+
+
+              
+                
+          <Button x:Name="casualButton" Text="+10" WidthRequest="70" HeightRequest="70"
+                        RelativeLayout.XConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                                Property=Width, 
+                                                Factor=0.5,
+                                                Constant=-35}"
+
+                        RelativeLayout.YConstraint=
+                        "{ConstraintExpression Type=RelativeToView, 
+                                                ElementName=backgroundImage,
+                                                Property=Height, 
+                                                Constant=-130}" />
+
+                
+                
+           <Button x:Name="earnedButton" Text="+30" WidthRequest="70" HeightRequest="70"
+                        RelativeLayout.XConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                                Property=Width, 
+                                                Constant=-90}"
+
+                        RelativeLayout.YConstraint=
+                        "{ConstraintExpression Type=RelativeToView, 
+                                                ElementName=backgroundImage,
+                                                Property=Height, 
+                                                Constant=-130}" />
+
+                <Label x:Name="sickLabel" TextColor="#FFFFFF" Text="Sick" FontAttributes="Bold" FontSize="26"  
+                        RelativeLayout.XConstraint=
+                        "{ConstraintExpression Type=RelativeToView, 
+                                                ElementName=sickButton,
+                                                Property=X, 
+                                                Constant=0}"
+                    
+                        RelativeLayout.YConstraint=
+                        "{ConstraintExpression Type=RelativeToView, 
+                                                ElementName=backgroundImage,
+                                                Property=Height,
+                                                Constant=-50}" />
+                
+                <Label x:Name="casualLabel" TextColor="#FFFFFF" Text="Casual" FontAttributes="Bold" FontSize="26"  
+                        RelativeLayout.XConstraint=
+                        "{ConstraintExpression Type=RelativeToView, 
+                                                ElementName=casualButton,
+                                                Property=X, 
+                                                Constant=0}"
+                    
+                        RelativeLayout.YConstraint=
+                        "{ConstraintExpression Type=RelativeToView, 
+                                                ElementName=backgroundImage,
+                                                Property=Height,
+                                                Constant=-50}" />
+                
+                <Label x:Name="earnedLabel" TextColor="#FFFFFF" Text="Earned" FontAttributes="Bold" FontSize="26"  
+                        RelativeLayout.XConstraint=
+                        "{ConstraintExpression Type=RelativeToView, 
+                                                ElementName=earnedButton,
+                                                Property=X, 
+                                                Constant=0}"
+                    
+                        RelativeLayout.YConstraint=
+                        "{ConstraintExpression Type=RelativeToView, 
+                                                ElementName=backgroundImage,
+                                                Property=Height,
+                                                Constant=-50}" />
+            </RelativeLayout>
+       </ScrollView>
+  </ContentPage.Content>
+
+</ContentPage>
