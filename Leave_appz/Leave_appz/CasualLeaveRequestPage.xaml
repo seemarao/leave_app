@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="Leave_appz.sickLeaveRequestPage" 
-    xmlns:local="clr-namespace:Leave_appz">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Leave_appz.CasualLeaveRequestPage"
+             xmlns:local="clr-namespace:Leave_appz">
 
-<RelativeLayout>
+
+    <RelativeLayout>
             
             <Image x:Name="backgroundImage" Aspect="AspectFill"
                         RelativeLayout.WidthConstraint=
@@ -19,7 +20,7 @@
 
 
 
-             <Label Text="Sick Leave" FontAttributes="Bold" FontSize="25" Margin="15" TextColor="White" HorizontalTextAlignment="Start"
+             <Label Text="Casual Leave" FontAttributes="Bold" FontSize="25" Margin="15" TextColor="White" HorizontalTextAlignment="Start"
                      RelativeLayout.YConstraint=
                      "{ConstraintExpression Type=RelativeToParent,
                                                Property=Y,
@@ -63,7 +64,7 @@
                                                Factor=1}"/>
 
 
-        <Editor x:Name="MyEditor" Margin="15" BackgroundColor="Transparent" HeightRequest="120" WidthRequest="350" TextColor="White" 
+        <local:CustomEditor x:Name="MyEditor" Margin="15" BackgroundColor="Transparent" HeightRequest="120" WidthRequest="350" TextColor="White" 
           Keyboard="Default" Focused="MyEditor_Focused" Unfocused="MyEditor_Unfocused" FontSize="26"
             RelativeLayout.YConstraint=
             "{ConstraintExpression Type=RelativeToView,
@@ -136,5 +137,6 @@
 
 
        </RelativeLayout>
-    
+
+
 </ContentPage>

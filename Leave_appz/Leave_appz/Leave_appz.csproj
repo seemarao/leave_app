@@ -48,6 +48,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="CasualLeaveRequestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EarnedLeaveRequestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -70,6 +78,13 @@
     </Compile>
     <Compile Include="sickLeaveRequestPage.xaml.cs">
       <DependentUpon>sickLeaveRequestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CasualLeaveRequestPage.xaml.cs">
+      <DependentUpon>CasualLeaveRequestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomEditor.cs" />
+    <Compile Include="EarnedLeaveRequestPage.xaml.cs">
+      <DependentUpon>EarnedLeaveRequestPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

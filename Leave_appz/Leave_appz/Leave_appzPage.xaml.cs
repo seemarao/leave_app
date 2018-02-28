@@ -11,4 +11,5 @@ namespace Leave_appz
             whitelogoImage.Source = ImageSource.FromResource("Leave_appz.Assets.whitelogoss.png");
         }
     }
+
 }

@@ -8,7 +8,7 @@ namespace Leave_appz
         {
             InitializeComponent();
 
-            MainPage = new sickLeaveRequestPage();
+            MainPage = new EarnedLeaveRequestPage();
         }
 
         protected override void OnStart()
