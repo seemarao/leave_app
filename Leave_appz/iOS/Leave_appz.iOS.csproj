@@ -125,6 +125,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\background.png" />
     <BundleResource Include="Resources\whitelogo.png" />
+    <BundleResource Include="Resources\hamburger.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets')" />

@@ -11,7 +11,7 @@ namespace Leave_appz
         {
             InitializeComponent();
             backgroundImage.Source = ImageSource.FromResource("Leave_appz.Assets.background.png");
-            sideMenu.Source = ImageSource.FromResource("Leave_appz.Assets.hamburger.png");
+            //sideMenu.Source = ImageSource.FromResource("Leave_appz.Assets.hamburger.png");
 
             var browser = leaveDetailsWV;
             //browser.HorizontalOptions = LayoutOptions.Fill;

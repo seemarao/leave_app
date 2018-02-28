@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="using:Leave_appz"
+             x:Class="Leave_appz.MasterPage"
+             Padding="0,0,0,0"
+             Icon="hamburger.png"
+             Title="Leave Application"
+              >
+    <StackLayout>
+        <ListView x:Name="listView">
+           <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:MasterPageItem}">
+                    <local:MasterPageItem Title="Request A Leave" TargetType="{x:Type local:HomePage}" />
+                    <local:MasterPageItem Title="View Taken Leave" TargetType="{x:Type local:HomePage}" />
+                    <local:MasterPageItem Title="View Leave Policy" TargetType="{x:Type local:LeaveInfo}" />
+                    <local:MasterPageItem Title="About Developer" TargetType="{x:Type local:About}" />
+                    <local:MasterPageItem Title="Help" TargetType="{x:Type local:Help}" />
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

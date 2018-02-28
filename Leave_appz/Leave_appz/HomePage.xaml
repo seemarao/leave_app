@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Leave_appz.HomePage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Leave_appz.HomePage">
 <ContentPage.Content>
     <ScrollView>
 
@@ -16,7 +18,7 @@
                                                Property=Height,
                                                Factor=1}" />
 
-          <Image x:Name="sideMenu" Aspect="AspectFill" WidthRequest="30" HeightRequest="30"
+          <!-- <Image x:Name="sideMenu" Aspect="AspectFill" WidthRequest="30" HeightRequest="30"
                         
                         RelativeLayout.XConstraint=
                         "{ConstraintExpression Type=RelativeToParent,
@@ -26,7 +28,7 @@
                         RelativeLayout.YConstraint=
                         "{ConstraintExpression Type=RelativeToParent,
                                                Property = Y, 
-                                               Constant = 10}" />
+                                               Constant = 10}" /> -->
 
            <Label x:Name="userID" TextColor="#FFFFFF" Text="User ID" FontAttributes="Bold" FontSize="26"  
                         RelativeLayout.XConstraint=
