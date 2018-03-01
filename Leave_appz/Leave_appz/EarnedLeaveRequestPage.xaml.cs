@@ -21,7 +21,7 @@ namespace Leave_appz
             if (MyEditor.Text.Equals("Please provide the reason for your leave here !!")) //if you have the placeholder showing, erase it and set the text color to black
             {
                 MyEditor.Text = "";
-                MyEditor.TextColor = Color.Black;
+                MyEditor.TextColor = Color.White;
             }
         }
 

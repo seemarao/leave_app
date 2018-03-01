@@ -126,7 +126,7 @@
                                                 Property=Y,
                                                 Factor=1,
                                                 ElementName=backgroundImage,
-                                                Constant=270}"
+                                                Constant=310}"
 
 
                       RelativeLayout.WidthConstraint=
@@ -140,7 +140,7 @@
                                                 Property=Y,
                                                 Factor=1,
                                                 ElementName=backgroundImage,
-                                                Constant=410}"
+                                                Constant=450}"
 
             RelativeLayout.WidthConstraint=
                        "{ConstraintExpression Type=RelativeToView,
