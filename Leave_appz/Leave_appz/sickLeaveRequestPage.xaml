@@ -63,7 +63,7 @@
                                                Factor=1}"/>
 
 
-        <Editor x:Name="MyEditor" Margin="15" BackgroundColor="Transparent" HeightRequest="120" WidthRequest="350" TextColor="White" 
+        <local:CustomEditor x:Name="MyEditor" Margin="15" BackgroundColor="Transparent" HeightRequest="120" WidthRequest="350" TextColor="White" 
           Keyboard="Default" Focused="MyEditor_Focused" Unfocused="MyEditor_Unfocused" FontSize="26"
             RelativeLayout.YConstraint=
             "{ConstraintExpression Type=RelativeToView,
