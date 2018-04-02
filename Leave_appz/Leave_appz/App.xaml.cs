@@ -9,9 +9,7 @@ namespace Leave_appz
             InitializeComponent();
 
             MainPage = new Leave_appzPage();
-            //MainPage = new MainPage();
 
-            //MainPage = new EarnedLeaveRequestPage();
         }
 
         protected override void OnStart()
