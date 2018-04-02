@@ -120,6 +120,7 @@
     <Compile Include="SplashScreen.cs" />
     <Compile Include="CustomEntryAndroid.cs" />
     <Compile Include="Resources\drawable\CustomButtonAndroid.cs" />
+    <Compile Include="CustomEditorAndroid.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Leave_appz.sickLeaveRequestPage" 
+    xmlns:local="clr-namespace:Leave_appz">
+
+<RelativeLayout>
+            
+            <Image x:Name="backgroundImage" Aspect="AspectFill"
+                        RelativeLayout.WidthConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Width,
+                                               Factor=1}"
+
+                       RelativeLayout.HeightConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Height,
+                                               Factor=1}" />
+
+
+
+             <Label Text="Sick Leave" FontAttributes="Bold" FontSize="25" Margin="15" TextColor="White" HorizontalTextAlignment="Start"
+                     RelativeLayout.YConstraint=
+                     "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Y,
+                                               Factor=1,
+                    
+                                               Constant=100}"
+                     RelativeLayout.WidthConstraint=
+                    "{ConstraintExpression Type=RelativeToParent,
+                                              Property=Width,
+                                              Factor=1}" />
+
+        <BoxView HeightRequest="1.5" BackgroundColor="White" Margin="15"
+                 RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                                Property=Y,
+                                                Factor=1,
+                                                ElementName=backgroundImage,
+                                                Constant=140}"
+
+
+                      RelativeLayout.WidthConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                               Property=Width,
+                                               ElementName=backgroundImage,
+                                               Factor=1}"/> 
+
+        
+
+        <BoxView HeightRequest="1.5" BackgroundColor="White" Margin="10" 
+                 RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                                Property=Y,
+                                                Factor=1,
+                                                ElementName=backgroundImage,
+                                                Constant=230}"
+
+            RelativeLayout.WidthConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                               Property=Width,
+                                               ElementName=backgroundImage,
+                                               Factor=1}"/>
+
+
+        <local:CustomEditor x:Name="MyEditor" Margin="15" BackgroundColor="Transparent" HeightRequest="120" WidthRequest="350" TextColor="White" 
+          Keyboard="Default" Focused="MyEditor_Focused" Unfocused="MyEditor_Unfocused" FontSize="26"
+            RelativeLayout.YConstraint=
+            "{ConstraintExpression Type=RelativeToView,
+                                                Property=Y,
+                                                Factor=1,
+                                                ElementName=backgroundImage,
+                                                Constant=250}"
+
+
+                      RelativeLayout.WidthConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                               Property=Width,
+                                               ElementNam}"/>
+
+         <BoxView HeightRequest="1.5" BackgroundColor="White" Margin="15" 
+                 RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                                Property=Y,
+                                                Factor=1,
+                                                ElementName=backgroundImage,
+                                                Constant=380}"
+
+            RelativeLayout.WidthConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                               Property=Width,
+                                               ElementName=backgroundImage,
+                                               Factor=1}"/>
+
+
+
+        <local:CustomButton Text="Request Leave"  FontSize="22" BackgroundColor="#BFffffff" BorderRadius="25" Margin="15" TextColor="#fc3b00" HeightRequest="50" 
+                    RelativeLayout.YConstraint=
+                    "{ConstraintExpression Type=RelativeToParent,
+                                            Property=Height,
+                                            Factor=1,
+                                            Constant=-85}"
+                    RelativeLayout.XConstraint=
+                    "{ConstraintExpression Type=RelativeToParent,
+                                            Property=Width,
+                                            Factor=0,
+                                            ElementName=backgroundImage,
+                                            Constant=0}"
+
+                    RelativeLayout.WidthConstraint=
+                    "{ConstraintExpression Type=RelativeToParent,
+                                            Property=Width,
+                                            ElementName=backgroundImage,
+                                            Factor=1}"/>
+
+        <DatePicker x:Name="PickerDate" MinimumDate="05-05-2017" Format="dd-mm-yyyy" MaximumDate="12-12-2050" IsVisible="False" 
+              TextColor="White"  DateSelected="PickerDate_DateSelected" /> 
+        
+<Label x:Name="DateLabel" Text="Tap to Select Date" FontSize="20"  TextColor="White"  Margin="15"
+            RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                                Property=Y,
+                                                Factor=1,
+                                                ElementName=backgroundImage,
+                                                Constant=190}"
+
+            RelativeLayout.WidthConstraint=
+                       "{ConstraintExpression Type=RelativeToView,
+                                               Property=Width,
+                                               ElementName=backgroundImage,
+                                               Factor=1}">
+   <Label.GestureRecognizers>
+      <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+   </Label.GestureRecognizers>
+</Label>
+
+
+       </RelativeLayout>
+    
+</ContentPage>

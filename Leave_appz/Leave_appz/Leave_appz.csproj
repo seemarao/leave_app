@@ -57,6 +57,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="sickLeaveRequestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CasualLeaveRequestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EarnedLeaveRequestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -87,6 +99,16 @@
       <DependentUpon>MasterPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MasterPageItem.cs" />
+    <Compile Include="sickLeaveRequestPage.xaml.cs">
+      <DependentUpon>sickLeaveRequestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CasualLeaveRequestPage.xaml.cs">
+      <DependentUpon>CasualLeaveRequestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomEditor.cs" />
+    <Compile Include="EarnedLeaveRequestPage.xaml.cs">
+      <DependentUpon>EarnedLeaveRequestPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -103,7 +125,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="New Folder1\" />
     <Folder Include="Assets\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
