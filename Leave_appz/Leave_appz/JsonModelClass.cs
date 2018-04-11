@@ -13,5 +13,10 @@ namespace Leave_appz
             public string user_type { get; set; }
         }
 
+        public class UserLeaveCountModel
+        {
+            public string leave_count { get; set; }
+        }
+
     }
 }

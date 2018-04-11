@@ -57,7 +57,8 @@ namespace Leave_appz
             {
                 var userModel = JsonConvert.DeserializeObject<JsonModelClass.UserDataModel>(json);
                 if (userModel.email_id.Trim().Equals(user_name.Text.Trim()) && userModel.user_password.Trim().Equals(user_password.Text.Trim())){
-                    
+                    Application.Current.Properties["email"] = user_name.Text.Trim();
+                    Application.Current.Properties["password"] = user_password.Text.Trim();
                     await Navigation.PushAsync(new MainPage());
                 }
                 else{

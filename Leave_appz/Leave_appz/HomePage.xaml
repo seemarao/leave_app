@@ -44,7 +44,7 @@
                                                Property = Y, 
                                                Constant = 10}" /> -->
 
-           <Label x:Name="userID" TextColor="#FFFFFF" Text="User ID" FontAttributes="Bold" FontSize="26"  
+           <!--<Label x:Name="userID" TextColor="#FFFFFF" Text="User ID" FontAttributes="Bold" FontSize="26"  
                         RelativeLayout.XConstraint=
                         "{ConstraintExpression Type=RelativeToParent, 
                                                 Property=X, 
@@ -60,9 +60,9 @@
                         RelativeLayout.WidthConstraint=
                         "{ConstraintExpression Type=RelativeToParent, 
                                                 Property=Width, 
-                                                Factor=1}" />
+                                                Factor=1}" />  -->
 
-           <Label x:Name="userName" TextColor="#FFFFFF" Text="User Name" FontAttributes="Bold" FontSize="26"  
+           <Label x:Name="userName" TextColor="#FFFFFF" Text="Loading..." FontAttributes="Bold" FontSize="26"  
                         RelativeLayout.XConstraint=
                         "{ConstraintExpression Type=RelativeToParent, 
                                                 Property=X, 
@@ -73,7 +73,7 @@
                         "{ConstraintExpression Type=RelativeToParent, 
                                                 Property=Y, 
                                                 Factor=0, 
-                                                Constant=80}" 
+                                                Constant=60}" 
                     
                         RelativeLayout.WidthConstraint=
                         "{ConstraintExpression Type=RelativeToParent, 

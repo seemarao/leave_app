@@ -11,11 +11,14 @@
         <ListView x:Name="listView">
            <ListView.ItemsSource>
                 <x:Array Type="{x:Type local:MasterPageItem}">
-                    <local:MasterPageItem Title="Request A Leave" TargetType="{x:Type local:CasualLeaveRequestPage}" />
+                    <local:MasterPageItem Title="Request Casual Leave" TargetType="{x:Type local:CasualLeaveRequestPage}" />
+                    <local:MasterPageItem Title="Request Earned Leave" TargetType="{x:Type local:EarnedLeaveRequestPage}" />
+                    <local:MasterPageItem Title="Request Sick Leave" TargetType="{x:Type local:sickLeaveRequestPage}" />
                     <local:MasterPageItem Title="View Taken Leave" TargetType="{x:Type local:HomePage}" />
                     <local:MasterPageItem Title="View Leave Policy" TargetType="{x:Type local:LeaveInfo}" />
                     <local:MasterPageItem Title="About Developer" TargetType="{x:Type local:About}" />
                     <local:MasterPageItem Title="Help" TargetType="{x:Type local:Help}" />
+                    <local:MasterPageItem Title="Logout" TargetType="{x:Type local:LogoutPage}" />
                 </x:Array>
             </ListView.ItemsSource>
             <ListView.ItemTemplate>
