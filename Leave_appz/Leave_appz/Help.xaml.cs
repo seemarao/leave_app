@@ -14,6 +14,12 @@ namespace Leave_appz
             var browser = new WebView();
             browser.HorizontalOptions = LayoutOptions.FillAndExpand;
             browser.VerticalOptions = LayoutOptions.FillAndExpand;
+            hamburger.Source = ImageSource.FromResource("Leave_appz.Assets.hamburger.png");
+            var tapGestureRecognizer = new TapGestureRecognizer();
+            tapGestureRecognizer.Tapped += (s, e) => {
+                AppConstant.mastr.IsPresented = true;
+            };
+            hamburger.GestureRecognizers.Add(tapGestureRecognizer);
 
             var source = new HtmlWebViewSource();
             var text = @"<html>" +

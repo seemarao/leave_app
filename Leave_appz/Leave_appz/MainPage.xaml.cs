@@ -12,7 +12,7 @@ namespace Leave_appz
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             masterPage.ListView.ItemSelected += OnItemSelected;
-
+            AppConstant.mastr = this;
             if (Device.RuntimePlatform == Device.UWP)
             {
                 MasterBehavior = MasterBehavior.Popover;

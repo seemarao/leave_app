@@ -7,5 +7,6 @@ namespace Leave_appz
         {
         }
        public static String URL = "http://zymolytic-brass.000webhostapp.com";
+        public static MainPage mastr;
     }
 }

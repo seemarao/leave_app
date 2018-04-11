@@ -13,7 +13,13 @@ namespace Leave_appz
             NavigationPage.SetHasNavigationBar(this, false);
             backgroundImage.Source = ImageSource.FromResource("Leave_appz.Assets.background.png");
             //sideMenu.Source = ImageSource.FromResource("Leave_appz.Assets.hamburger.png");
+            hamburger.Source = ImageSource.FromResource("Leave_appz.Assets.hamburger.png");
 
+            var tapGestureRecognizer = new TapGestureRecognizer();
+            tapGestureRecognizer.Tapped += (s, e) => {
+                AppConstant.mastr.IsPresented = true;
+            };
+            hamburger.GestureRecognizers.Add(tapGestureRecognizer);
             var browser = leaveDetailsWV;
             //browser.HorizontalOptions = LayoutOptions.Fill;
             //browser.VerticalOptions = LayoutOptions.Fill;

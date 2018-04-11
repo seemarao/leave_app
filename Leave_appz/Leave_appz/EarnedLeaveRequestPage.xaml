@@ -18,6 +18,21 @@
                                                Factor=1}" />
 
 
+        <Image  x:Name = "hamburger" Aspect="AspectFit"  HeightRequest="45" WidthRequest="45" 
+
+            RelativeLayout.YConstraint=
+                     "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Y,
+                                               Factor=1,
+                    
+                                               Constant=20}"
+            RelativeLayout.XConstraint=
+                     "{ConstraintExpression Type=RelativeToParent,
+                                               Property=X,
+                                               Factor=1,
+                    
+                                               Constant=10}"/>
+
 
              <Label Text="Earned Leave" FontAttributes="Bold" FontSize="25" Margin="15" TextColor="White" HorizontalTextAlignment="Start"
                      RelativeLayout.YConstraint=

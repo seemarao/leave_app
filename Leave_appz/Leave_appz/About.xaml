@@ -2,9 +2,37 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="Leave_appz.About">
-	 <StackLayout BackgroundColor="#FB8D00" x:Name="webViewLayout"
-    HorizontalOptions="FillAndExpand"
-    VerticalOptions="FillAndExpand">
+
+    <RelativeLayout>
+        <StackLayout BackgroundColor="#FB8D00" x:Name="webViewLayout"
+         RelativeLayout.WidthConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Width,
+                                               Factor=1}"
+
+                       RelativeLayout.HeightConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Height,
+                                               Factor=1}"
+                >
     <!-- view codebehind for WebView for overview text -->
-         </StackLayout>
+
+  
+        
+        </StackLayout>
+         <Image  x:Name = "hamburger" Aspect="AspectFit"  HeightRequest="45" WidthRequest="45" 
+          RelativeLayout.YConstraint=
+                       "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Y,
+                                               Factor=1,
+                                               Constant=20}"
+                       RelativeLayout.XConstraint=
+                      "{ConstraintExpression Type=RelativeToParent,
+                                               Property=X,
+                                               Factor=1,
+                                               Constant=10}"
+            />
+    </RelativeLayout>
+
+    
 </ContentPage>
