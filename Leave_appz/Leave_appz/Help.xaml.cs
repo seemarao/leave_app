@@ -10,6 +10,7 @@ namespace Leave_appz
         public Help()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             var browser = new WebView();
             browser.HorizontalOptions = LayoutOptions.FillAndExpand;
             browser.VerticalOptions = LayoutOptions.FillAndExpand;

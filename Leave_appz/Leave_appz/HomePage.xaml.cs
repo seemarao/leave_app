@@ -10,6 +10,7 @@ namespace Leave_appz
         public HomePage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             backgroundImage.Source = ImageSource.FromResource("Leave_appz.Assets.background.png");
             //sideMenu.Source = ImageSource.FromResource("Leave_appz.Assets.hamburger.png");
 

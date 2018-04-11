@@ -10,7 +10,7 @@ namespace Leave_appz
         public MainPage()
         {
             InitializeComponent();
-
+            NavigationPage.SetHasNavigationBar(this, false);
             masterPage.ListView.ItemSelected += OnItemSelected;
 
             if (Device.RuntimePlatform == Device.UWP)

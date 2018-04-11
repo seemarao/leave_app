@@ -11,6 +11,7 @@ namespace Leave_appz
         {
             
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             backgroundImage.Source = ImageSource.FromResource("Leave_appz.Assets.background.png");
 
             MyEditor.Text = "Please provide the reason for your leave here !!"; //initialize the Editor.Text and TextColor on the XAML file or on the constructor on the code behind with the PlaceHolder or whatever you want.

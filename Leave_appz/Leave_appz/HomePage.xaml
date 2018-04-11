@@ -2,10 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Leave_appz.HomePage">
-<ContentPage.Content>
-    <ScrollView>
+    <ScrollView BackgroundColor="#FB8D00">
 
-    <RelativeLayout>
+    <RelativeLayout BackgroundColor="#FB8D00">
             
             <Image x:Name="backgroundImage" Aspect="AspectFill"
                         RelativeLayout.WidthConstraint=
@@ -177,6 +176,6 @@
                                                 Constant=-50}" />
             </RelativeLayout>
        </ScrollView>
-  </ContentPage.Content>
+  
 
 </ContentPage>
