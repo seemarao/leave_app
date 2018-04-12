@@ -111,7 +111,7 @@
 
 
 
-        <local:CustomButton Text="Request Leave"  FontSize="22" BackgroundColor="#BFffffff" BorderRadius="25" Margin="15" TextColor="#fc3b00" HeightRequest="50" 
+        <local:CustomButton Clicked="Handle_Clicked" Text="Request Leave"  FontSize="22" BackgroundColor="#BFffffff" BorderRadius="25" Margin="15" TextColor="#fc3b00" HeightRequest="50" 
                     RelativeLayout.YConstraint=
                     "{ConstraintExpression Type=RelativeToParent,
                                             Property=Height,

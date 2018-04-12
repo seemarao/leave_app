@@ -1,12 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Net.Http;
 using Xamarin.Forms;
 
 namespace Leave_appz
 {
     public partial class EarnedLeaveRequestPage : ContentPage
     {
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            if (DateLabel.Text.Trim().Equals("") || DateLabel.Text.Trim().Equals("From Date"))
+            {
+                DisplayAlert("Warning", "No From Date Selected", "ok");
+            }
+            else if (DateLabelN.Text.Trim().Equals("") || DateLabelN.Text.Trim().Equals("To Date"))
+            {
+                DisplayAlert("Warning", "No To Date Selected", "ok");
+            }
+            else if (MyEditor.Text.Trim().Equals("") || MyEditor.Text.Trim().Equals("Please provide the reason for your leave here !!"))
+            {
+                DisplayAlert("Warning", "No Description Found", "ok");
+            }
+            else
+            {
+                if (Application.Current.Properties.ContainsKey("email"))
+                {
+                    var email = Application.Current.Properties["email"] as String;
+                    RequestEarnedLeave(AppConstant.URL,email,DateLabel.Text,DateLabelN.Text,MyEditor.Text);
+                }
+                else
+                {
+                    //callLogoutFunction
+                }
+            }
+        }
+
         public EarnedLeaveRequestPage()
         {
             InitializeComponent();
@@ -48,7 +76,7 @@ namespace Leave_appz
 
         private void PickerDate_DateSelected(object sender, DateChangedEventArgs e)
         {
-            DateLabel.Text = PickerDate.Date.Date.ToString("dd-MM-yyyy");
+            DateLabel.Text = PickerDate.Date.Date.ToString("yyyy-MM-dd");
         }
 
 
@@ -59,7 +87,37 @@ namespace Leave_appz
 
         private void PickerDate_DateSelectedN(object senderN, DateChangedEventArgs f)
         {
-            DateLabelN.Text = PickerDateN.Date.Date.ToString("dd-MM-yyyy");
+            DateLabelN.Text = PickerDateN.Date.Date.ToString("yyyy-MM-dd");
         }
+        async void RequestEarnedLeave(string URL, string userName, string from_date, string to_date, string description)
+        {
+            //year/Month/day
+            var formContent = new FormUrlEncodedContent(new[]
+                {
+                new KeyValuePair<string, string>("id", "8"),
+                new KeyValuePair<string, string>("useremail", userName),
+                new KeyValuePair<string, string>("from_date", from_date),
+                new KeyValuePair<string, string>("to_date", to_date),
+                new KeyValuePair<string, string>("description", description),
+            });
+
+            var myHttpClient = new HttpClient();
+            var response = await myHttpClient.PostAsync(URL, formContent);
+
+            var json = await response.Content.ReadAsStringAsync();
+            System.Diagnostics.Debug.WriteLine(json);
+            if (json.Trim().Equals("723"))
+            {
+                await DisplayAlert("Warning", "Request Succcessfull", "ok");
+            }
+            else
+            {
+                await DisplayAlert("Warning", "Request Failed", "ok");
+            }
+
+        }
+
+
+
     }
 }

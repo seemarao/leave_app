@@ -1,12 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Net.Http;
 using Xamarin.Forms;
 
 namespace Leave_appz
 {
     public partial class sickLeaveRequestPage : ContentPage
     {
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            if(DateLabel.Text.Trim().Equals("") || DateLabel.Text.Trim().Equals("Tap to Select Date") ){
+                DisplayAlert("Warning", "No Date Selected", "ok");
+            }
+            else if(MyEditor.Text.Trim().Equals("") || MyEditor.Text.Trim().Equals("Please provide the reason for your leave here !!")){
+                DisplayAlert("Warning", "No Description Found", "ok");
+            }
+            else{
+                if (Application.Current.Properties.ContainsKey("email"))
+                {
+                    var email = Application.Current.Properties["email"] as String;
+                    RequestLeave(AppConstant.URL,email,DateLabel.Text,"0",MyEditor.Text);
+                }else{
+                    //callLogoutFunction
+                }
+            }
+        }
+
         public sickLeaveRequestPage()
         {
             
@@ -49,7 +68,35 @@ namespace Leave_appz
 
         private void PickerDate_DateSelected(object sender, DateChangedEventArgs e)
         {
-            DateLabel.Text = PickerDate.Date.Date.ToString("dd-MM-yyyy");
+            DateLabel.Text = PickerDate.Date.Date.ToString("yyyy-MM-dd");
+        }
+
+        async void RequestLeave(string URL, string userName, string date, string typeofleave, string description)
+        {
+            //year/Month/day
+            var formContent = new FormUrlEncodedContent(new[]
+                {
+                new KeyValuePair<string, string>("id", "7"),
+                new KeyValuePair<string, string>("useremail", userName),
+                new KeyValuePair<string, string>("date", date),
+                new KeyValuePair<string, string>("type_of_leave", typeofleave),
+                new KeyValuePair<string, string>("description", description),
+            });
+
+            var myHttpClient = new HttpClient();
+            var response = await myHttpClient.PostAsync(URL, formContent);
+
+            var json = await response.Content.ReadAsStringAsync();
+            System.Diagnostics.Debug.WriteLine(json);
+            if (json.Trim().Equals("723"))
+            {
+                await DisplayAlert("Warning", "Request Succcessfull", "ok");
+            }
+            else
+            {
+                await DisplayAlert("Warning", "Request Failed", "ok");
+            }
+
         }
 
     }
