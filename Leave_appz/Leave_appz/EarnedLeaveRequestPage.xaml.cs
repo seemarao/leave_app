@@ -108,7 +108,10 @@ namespace Leave_appz
             System.Diagnostics.Debug.WriteLine(json);
             if (json.Trim().Equals("723"))
             {
-                await DisplayAlert("Warning", "Request Succcessfull", "ok");
+                await DisplayAlert("Leave Appz", "Request Succcessfull", "ok");
+            }
+            else if (json.Trim().Equals("726")){
+                await DisplayAlert("Warning", "Range Of date Max Allowed Is 10.Remaining is Truncated", "ok");
             }
             else
             {

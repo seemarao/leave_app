@@ -153,7 +153,30 @@
 
 
 
+      <Image x:Name="progres" IsVisible="false" Aspect="AspectFill"
+                        RelativeLayout.WidthConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Width,
+                                               Factor=1}"
 
+                       RelativeLayout.HeightConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Height,
+                                               Factor=1}" />
+      <Label x:Name="progresbar" IsVisible="false" Text="Loading...!" TextColor="White" XAlign="Center"
+       RelativeLayout.YConstraint=
+                    "{ConstraintExpression Type=RelativeToParent,
+                                            Property=Height,
+                                            Factor=0.5,
+                                            Constant=1}"
+                 RelativeLayout.WidthConstraint=
+                        "{ConstraintExpression Type=RelativeToParent,
+                                               Property=Width,
+                                               Factor=1}"
+
+
+
+        />
 
             </RelativeLayout>
     </ContentPage>
