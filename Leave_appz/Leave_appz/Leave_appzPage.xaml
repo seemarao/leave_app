@@ -66,7 +66,7 @@
                                                ElementName=backgroundImage,
                                                Factor=1}" />
 
-               <local:CustomEntry x:Name="user_name" Keyboard="Email" Placeholder="Username" TextColor="White" FontSize="23" PlaceholderColor="#ffffffff" Margin="15" HorizontalTextAlignment="Start" BackgroundColor="Transparent"
+               <local:CustomEntry x:Name="user_name" Keyboard="Email" Placeholder="Username" TextColor="White" FontSize="23" PlaceholderColor="#ffffffff" Margin="15" HorizontalTextAlignment="Start" BackgroundColor="Transparent" AutomationId="UsernameField"
                        RelativeLayout.YConstraint=
                        "{ConstraintExpression Type=RelativeToView,
                                                 Property=Y,
@@ -101,7 +101,7 @@
 
 
         
-                <local:CustomEntry x:Name="user_password"  IsPassword="true" Placeholder="Password"  PlaceholderColor="#ffffffff" Margin="15" TextColor="White" FontSize="23" HorizontalTextAlignment="Start" BackgroundColor="Transparent"
+                <local:CustomEntry x:Name="user_password"  IsPassword="true" Placeholder="Password"  PlaceholderColor="#ffffffff" Margin="15" TextColor="White" FontSize="23" HorizontalTextAlignment="Start" BackgroundColor="Transparent" AutomationId="PasswordField"
                       RelativeLayout.YConstraint=
                       "{ConstraintExpression Type=RelativeToView,
                                               Property=Y,

@@ -20,7 +20,7 @@
   
         
         </StackLayout>
-         <Image  x:Name = "hamburger" Aspect="AspectFit"  HeightRequest="45" WidthRequest="45" 
+         <Image  x:Name = "hamburger" Aspect="AspectFit"  HeightRequest="45" WidthRequest="45" AutomationId = "slidebar"
           RelativeLayout.YConstraint=
                        "{ConstraintExpression Type=RelativeToParent,
                                                Property=Y,

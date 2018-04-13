@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{029AA19F-DA96-4BFD-8D5D-EDFF8E145C40}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UItests/LoginTest.cs">
+    <Files>
+      <File FileName="UItests/LoginTest.cs" Line="73" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Leave__appz.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.30587934-7128-45A4-8401-D339FFD43E49" automaticSigning="True">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam DeveloperId="LC4XSZ5LJG" TeamId="B95JN4VN8N" />
+  </MonoDevelop.Ide.ItemProperties.Leave__appz.iOS>
+  <MonoDevelop.Ide.ItemProperties.Leave__appz.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Leave__appUITest PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
