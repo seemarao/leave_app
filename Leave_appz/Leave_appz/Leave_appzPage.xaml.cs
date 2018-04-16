@@ -22,7 +22,13 @@ namespace Leave_appz
                 }
                 else
                 {
+                try{
                     PostRequest(AppConstant.URL, user_name.Text, user_password.Text);
+                } catch(Exception ex) {
+                    DisplayAlert("Warning", "There seems to be network issue. Please try again.", "OK");
+                    System.Diagnostics.Debug.WriteLine(ex.Message);
+                }
+                    
                 }
            
         }
@@ -51,7 +57,14 @@ namespace Leave_appz
                 unHideLoadingHud();
                 var email = Application.Current.Properties["email"] as String;
                 var password = Application.Current.Properties["password"] as String;
-                reLoginRequest(AppConstant.URL,email,password);
+                try {
+                    reLoginRequest(AppConstant.URL, email, password);
+                } catch (Exception ex)
+                {
+                    DisplayAlert("Warning", "There seems to be network issue. Please try again.", "OK");
+                    System.Diagnostics.Debug.WriteLine(ex.Message);
+                }
+
             }
         }
 
