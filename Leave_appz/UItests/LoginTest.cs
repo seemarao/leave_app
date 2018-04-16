@@ -70,9 +70,10 @@ namespace UItests
             app.EnterText(("PasswordField"), "test");
             app.DismissKeyboard();
             app.Tap(("Sign In"));
-            app.Query(c => c.Text("slidebar"));
+
 
         }
+
 
 
 
