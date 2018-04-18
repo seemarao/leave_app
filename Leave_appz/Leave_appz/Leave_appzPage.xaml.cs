@@ -10,13 +10,13 @@ namespace Leave_appz
     {
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-          
-                if (user_name.Text.Trim().Equals(""))
+                var viewModel = new ViewModels();
+                if (viewModel.checkForEmptyString(user_name.Text))
                 {
                     DisplayAlert("Warning", "User Name Text Field Is Empty", "ok");
 
                 }
-                else if (user_password.Text.Trim().Equals(""))
+                else if (viewModel.checkForEmptyString(user_password.Text))
                 {
                     DisplayAlert("Warning", "User Password Text Field Is Empty", "ok");
                 }

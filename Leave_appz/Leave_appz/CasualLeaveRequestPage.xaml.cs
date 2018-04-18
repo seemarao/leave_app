@@ -9,11 +9,12 @@ namespace Leave_appz
     {
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            if (DateLabel.Text.Trim().Equals("") || DateLabel.Text.Trim().Equals("Tap to Select Date"))
+            var viewModels = new ViewModels();
+            if (viewModels.casualLeaveDateLabelValidater(DateLabel.Text))
             {
                 DisplayAlert("Warning", "No Date Selected", "ok");
             }
-            else if (MyEditor.Text.Trim().Equals("") || MyEditor.Text.Trim().Equals("Please provide the reason for your leave here !!"))
+            else if (viewModels.casualLeaveMyEditorLabelValidater(MyEditor.Text))
             {
                 DisplayAlert("Warning", "No Description Found", "ok");
             }

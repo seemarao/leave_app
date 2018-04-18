@@ -118,6 +118,7 @@
     <Compile Include="LogoutPage.xaml.cs">
       <DependentUpon>LogoutPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\" />
