@@ -11,10 +11,10 @@ namespace Leave_appz
         {
             var viewModel = new ViewModels();
             if(viewModel.sickLeaveDateLabelValidater(DateLabel.Text) ){
-                DisplayAlert("Warning", "No Date Selected", "ok");
+                DisplayAlert("ALERT", "Please select a valid Date.", "OK");
             }
             else if(viewModel.sickLeaveEntryLabelValidater(MyEditor.Text)){
-                DisplayAlert("Warning", "No Description Found", "ok");
+                DisplayAlert("ALERT", "Please enter the reason.", "OK");
             }
             else{
                 if (Application.Current.Properties.ContainsKey("email"))
@@ -91,11 +91,11 @@ namespace Leave_appz
             System.Diagnostics.Debug.WriteLine(json);
             if (json.Trim().Equals("723"))
             {
-                await DisplayAlert("Warning", "Request Succcessfull", "ok");
+                await DisplayAlert("ALERT", "Request succcessfull.", "OK");
             }
             else
             {
-                await DisplayAlert("Warning", "Request Failed", "ok");
+                await DisplayAlert("ALERT", "Request failed.", "OK");
             }
 
         }

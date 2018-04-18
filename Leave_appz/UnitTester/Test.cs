@@ -9,7 +9,7 @@ namespace UnitTester
         public void casualLeaveValidateTrue()
         {
             var viewModels = new Leave_appz.ViewModels();
-            Assert.True(viewModels.casualLeaveDateLabelValidater(""),"Placeholder Shuld not be empty");
+            Assert.True(viewModels.casualLeaveDateLabelValidater(""),"Placeholder Should not be empty");
             Assert.True(viewModels.casualLeaveDateLabelValidater("Tap to Select Date"), "Tap to select date is considerd as empty");
 
         }
@@ -26,7 +26,7 @@ namespace UnitTester
         public void casualLeaveEntryValidateTrue()
         {
             var viewModels = new Leave_appz.ViewModels();
-            Assert.True(viewModels.casualLeaveMyEditorLabelValidater(""), "Placeholder Shuld not be empty");
+            Assert.True(viewModels.casualLeaveMyEditorLabelValidater(""), "Placeholder Should not be empty");
             Assert.True(viewModels.casualLeaveMyEditorLabelValidater("Please provide the reason for your leave here !!"), "Tap to select date is considerd as empty");
 
         }

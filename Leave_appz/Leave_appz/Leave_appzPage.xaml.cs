@@ -13,19 +13,19 @@ namespace Leave_appz
                 var viewModel = new ViewModels();
                 if (viewModel.checkForEmptyString(user_name.Text))
                 {
-                    DisplayAlert("Warning", "User Name Text Field Is Empty", "ok");
+                DisplayAlert("ALERT", "Username is empty.", "OK");
 
                 }
                 else if (viewModel.checkForEmptyString(user_password.Text))
                 {
-                    DisplayAlert("Warning", "User Password Text Field Is Empty", "ok");
+                DisplayAlert("ALERT", "Password is empty.", "OK");
                 }
                 else
                 {
                 try{
                     PostRequest(AppConstant.URL, user_name.Text, user_password.Text);
                 } catch(Exception ex) {
-                    DisplayAlert("Warning", "There seems to be network issue. Please try again.", "OK");
+                    DisplayAlert("ALERT", "It seems to be some network issue. Please try again.", "OK");
                     System.Diagnostics.Debug.WriteLine(ex.Message);
                 }
                     
@@ -61,7 +61,7 @@ namespace Leave_appz
                     reLoginRequest(AppConstant.URL, email, password);
                 } catch (Exception ex)
                 {
-                    DisplayAlert("Warning", "There seems to be network issue. Please try again.", "OK");
+                    DisplayAlert("ALERT", "It seems to be some network issue. Please try again.", "OK");
                     System.Diagnostics.Debug.WriteLine(ex.Message);
                 }
 
@@ -94,13 +94,13 @@ namespace Leave_appz
                     await Navigation.PushAsync(new MainPage());
                 }
                 else{
-                  await  DisplayAlert("Warning", "Wrong User Name Or Password", "ok");
+                  await  DisplayAlert("ALERT", "Wrong Username or Password", "OK");
                     LogoutPage.logout();
                     hideLoadingHud();
                 }
             }catch(JsonSerializationException ex){
                 System.Diagnostics.Debug.WriteLine(ex.ToString());
-               await DisplayAlert("Warning", "Wrong User Name Or Password", "ok");
+                await DisplayAlert("ALERT", "Wrong Username or Password", "OK");
                 LogoutPage.logout();
                 hideLoadingHud();
             }
@@ -136,7 +136,7 @@ namespace Leave_appz
                 }
                 else
                 {
-                    await DisplayAlert("Warning", "Wrong User Name Or Password", "ok");
+                    await DisplayAlert("ALERT", "Wrong Username or Password", "OK");
                     LogoutPage.logout();
                     hideLoadingHud();
                 }
@@ -144,7 +144,7 @@ namespace Leave_appz
             catch (JsonSerializationException ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.ToString());
-                await DisplayAlert("Warning", "Wrong User Name Or Password", "ok");
+                await DisplayAlert("ALERT", "Wrong Username or Password", "OK");
                 LogoutPage.logout();
                 hideLoadingHud();
             }
