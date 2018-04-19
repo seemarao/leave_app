@@ -13,15 +13,15 @@ namespace Leave_appz
             var viewModel = new ViewModels();
              if ( viewModel.earnedLeaveDateLabelValidater(DateLabel.Text))
             {
-                DisplayAlert("Warning", "No From Date Selected", "ok");
+                DisplayAlert("ALERT", "Please select a valid From Date.", "OK");
             }
             else if (viewModel.earnedLeaveDateNLabelValidater(DateLabelN.Text))
             {
-                DisplayAlert("Warning", "No To Date Selected", "ok");
+                DisplayAlert("ALERT", "Please select a valid To Date.", "OK");
             }
             else if (viewModel.earnedLeaveMyEditorLabelValidater(MyEditor.Text))
             {
-                DisplayAlert("Warning", "No Description Found", "ok");
+                DisplayAlert("ALERT", "No Description Found", "OK");
             }
             else
             {
@@ -110,14 +110,14 @@ namespace Leave_appz
             System.Diagnostics.Debug.WriteLine(json);
             if (json.Trim().Equals("723"))
             {
-                await DisplayAlert("Leave Appz", "Request Succcessfull", "ok");
+                await DisplayAlert("Leave Appz", "Request succcessfull", "OK");
             }
             else if (json.Trim().Equals("726")){
-                await DisplayAlert("Warning", "Range Of date Max Allowed Is 10.Remaining is Truncated", "ok");
+                await DisplayAlert("ALERT", "Range of Maximum allowed leave is 10. Remaining is truncated. ", "OK");
             }
             else
             {
-                await DisplayAlert("Warning", "Request Failed", "ok");
+                await DisplayAlert("ALERT", "Request Failed", "OK");
             }
 
         }

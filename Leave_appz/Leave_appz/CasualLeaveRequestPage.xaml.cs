@@ -12,11 +12,11 @@ namespace Leave_appz
             var viewModels = new ViewModels();
             if (viewModels.casualLeaveDateLabelValidater(DateLabel.Text))
             {
-                DisplayAlert("Warning", "No Date Selected", "ok");
+                DisplayAlert("ALERT", "Please select a valid Date.", "OK");
             }
             else if (viewModels.casualLeaveMyEditorLabelValidater(MyEditor.Text))
             {
-                DisplayAlert("Warning", "No Description Found", "ok");
+                DisplayAlert("ALERT", "Please enter the reason.", "OK");
             }
             else
             {
@@ -95,11 +95,11 @@ namespace Leave_appz
             System.Diagnostics.Debug.WriteLine(json);
             if (json.Trim().Equals("723"))
             {
-                await DisplayAlert("Warning", "Request Succcessfull", "ok");
+                await DisplayAlert("ALERT", "Request succcessfull", "OK");
             }
             else
             {
-                await DisplayAlert("Warning", "Request Failed", "ok");
+                await DisplayAlert("ALERT", "Request failed", "OK");
             }
 
         }

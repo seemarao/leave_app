@@ -39,7 +39,7 @@
                                                ElementName=backgroundImage,
                                                Constant=10}"/>
 
-             <Label Text="App Name" FontAttributes="Bold" FontSize="25" TextColor="White" HorizontalTextAlignment="Center"
+             <Label Text="Leave App" FontAttributes="Bold" FontSize="25" TextColor="White" HorizontalTextAlignment="Center"
                      RelativeLayout.YConstraint=
                      "{ConstraintExpression Type=RelativeToView,
                                                Property=Y,
@@ -53,7 +53,7 @@
                                               Factor=1}" />
 
 
-               <Label Text="Some words about the app to fill the space jkhfd jgbfbg dhgjsl dshgjs sdkhgfsdl sdhkgids skdhgidsk dfbdsj dsjhfsd yufy"  FontSize="20" Margin="15,0,15,0" TextColor="#ffffffff" HorizontalTextAlignment="Center"
+               <Label Text="Made with Love for Prueba"  FontSize="20" Margin="15,0,15,0" TextColor="#ffffffff" HorizontalTextAlignment="Center"
                      RelativeLayout.YConstraint=
                      "{ConstraintExpression Type=RelativeToView,
                                                Property=Y,

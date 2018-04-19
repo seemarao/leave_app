@@ -25,13 +25,13 @@ namespace Leave_appz
             var text = @"<html>" +
                 "<head><link href='https://fonts.googleapis.com/css?family=Montserrat'   rel='stylesheet'></head>" +
                 "<body background='https://zymolytic-brass.000webhostapp.com/assets/background.png' bgcolor=\"#FB8D00\"  style=\"text-align: justify;color:white;font-family: 'Montserrat';\"><div style=''>" +
-                "<div style='font-size: 25px;'><br/<br/> <br/><b>App Name</b></div>" +
+                "<div style='font-size: 25px;'><br/<br/> <br/><b>Leave App</b></div>" +
 
-                "<br/><div style='font-size: 20px;'>This app is to request for leave on certain date admin will bla bla bla for leave on certain date admin will bla bla bla date admin will bla bla blawill bla bla bla for leave on certain date admin will bla bla bla date admin will bla bla bla will bla bla bla for leave on certain date admin will bla bla bla date admin will bla bla bla will bla bla bla for </div>" +
+                "<br/><div style='font-size: 20px;'>This app automates and manages employee leave management. No more paper work!! Employees can use this to request different types of leaves. Admin can grant or reject leave to them from the admin app.</div>" +
                 "<br/><div style='background-color:white;height:1px;border: 0px;'></div><br/><br/><br/>" +
                 "<div style='font-size: 25px;'><b>Contact Us</b></div>" +
-                "<br/><div style='font-size: 20px;'>Mobile No : +91 9989989989</div>" +
-                "<div style='font-size: 20px;'>Email Id : seema.rao@prueba.io</div>"
+                "<br/><div style='font-size: 20px;'>Mobile No : +91 87627837</div>" +
+                "<div style='font-size: 20px;'>Email Id : employee@company.io</div>"
                 + "<br/><div style='background-color:white;height:1px;border: 0px;'></div> </div>" +
                     "</body>" +
                     "</html>";

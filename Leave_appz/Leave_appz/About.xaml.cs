@@ -24,21 +24,21 @@ namespace Leave_appz
             var text = @"<html>" +
                 "<head><link href='https://fonts.googleapis.com/css?family=Montserrat'   rel='stylesheet'></head>" +
                 "<body background='https://zymolytic-brass.000webhostapp.com/assets/background.png' bgcolor=\"#FB8D00\"  style=\"text-align: justify;color:white;font-family: 'Montserrat';\"><div style=''>" +
-                "<div style='font-size: 25px;'><br/<br/> <br/><b>App Name</b></div>" +
-                "<br/><div style='font-size: 20px;'>Version 1.19.16.7.8</div>" +
-                "<div style='font-size: 20px;'>Release Beata</div>" +
-                "<div style='font-size: 20px;'>Copyright (c) Lt Designing 1010,</div>" +
-                "<div style='font-size: 20px;'>2050. All rights reserved</div>" +
+                "<div style='font-size: 25px;'><br/<br/> <br/><b>Leave App</b></div>" +
+                "<br/><div style='font-size: 20px;'>Version 1.0</div>" +
+                "<div style='font-size: 20px;'>Beta release</div>" +
+                "<div style='font-size: 20px;'>Copyright(c) Prueba India Software Pvt. Ltd. 2018 </div>" +
+                "<div style='font-size: 20px;'>All rights reserved</div>" +
 
                 "<br/><div style='background-color:white;height:1px;border: 0px;'></div><br/><br/><br/>" +
                 "<div style='font-size: 25px;'><b>Thanks To</b></div>" +
-                "<br/><div style='font-size: 20px;'>User Name - App designer</div>" +
-                "<div style='font-size: 20px;'>User Name- Database Designer </div>" +
-                "<div style='font-size: 20px;'>User Name- Database Designer </div>" +
-                "<div style='font-size: 20px;'>User Name- Database Designer </div>" +
-                "<div style='font-size: 20px;'>User Name- Database Designer </div>" +
-                "<div style='font-size: 20px;'>User Name- Database Designer </div>" +
-                "<br/><div style='font-size: 20px;'>Made with Love In prueba</div>"
+                "<br/><div style='font-size: 20px;'>Nikhil I - App designer and Lead</div>" +
+                "<div style='font-size: 20px;'>Pratik Kamath - Developer </div>" +
+                "<div style='font-size: 20px;'>Seema Rao Kordcal - Quality Analyst </div>" +
+                "<div style='font-size: 20px;'>Shambhavi Salian - Developer </div>" +
+                "<div style='font-size: 20px;'>Lathika Shetty - Developer </div>" +
+                "<div style='font-size: 20px;'>Sharath Kumar - Developer </div>" +
+                "<br/><div style='font-size: 20px;'>Made with Love for Prueba</div>"
                 + "<br/><div style='background-color:white;height:1px;border: 0px;'></div> </div>" +
                     "</body>" +
                     "</html>";
