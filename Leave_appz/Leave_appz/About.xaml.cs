@@ -32,7 +32,7 @@ namespace Leave_appz
 
                 "<br/><div style='background-color:white;height:1px;border: 0px;'></div><br/><br/><br/>" +
                 "<div style='font-size: 25px;'><b>Thanks To</b></div>" +
-                "<br/><div style='font-size: 20px;'>Nikhil I - App designer and Lead</div>" +
+                "<br/><div style='font-size: 20px;'>Nikhil I - App designer and Developer</div>" +
                 "<div style='font-size: 20px;'>Pratik Kamath - Developer </div>" +
                 "<div style='font-size: 20px;'>Seema Rao Kordcal - Quality Analyst </div>" +
                 "<div style='font-size: 20px;'>Shambhavi Salian - Developer </div>" +
